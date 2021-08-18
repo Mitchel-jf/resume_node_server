@@ -1,0 +1,43 @@
+{
+  "name": "micro-service",
+  "version": "0.0.0",
+  "description": "micro service boilerplate",
+  "private": true,
+  "main": "dist/bin/www",
+  "scripts": {
+    "clean": "node ./node_modules/rimraf/bin.js dist",
+    "compile": "node ./node_modules/@babel/cli/bin/babel.js ./src --out-dir dist",
+    "build": "npm run clean & npm run compile",
+    "start": "node ./dist/bin/www",
+    "dev": "nodemon",
+    "test": "mocha"
+  },
+  "directories": {
+    "test": "./test"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "^4.3.1",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "morgan": "~1.9.1",
+    "validatorjs": "^3.22.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/register": "^7.14.5",
+    "chai": "^4.3.4",
+    "eslint": "^7.28.0",
+    "mocha": "^9.0.2",
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
