@@ -1,5 +1,5 @@
 async function hello() {
-    return 'hello world';
+    return 'It works up to this point';
 }
 
 export default hello;
