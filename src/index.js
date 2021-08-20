@@ -22,14 +22,14 @@ app.use(cors({
     exposedHeaders: ["links"]
 }));
 
-app.use('/static', express.static('/Users/mac/Documents/Projects/Node.js/HNG/resume_node_server/flutter_web'))
-console.log(path.join(__dirname, 'flutter_web'))
+app.use('/', express.static(path.join(__dirname.split('dist')[0], 'flutter_web')))
+console.log(path.join(__dirname.split('dist')[0], 'flutter_web'))
 
 // internal middleware
 // app.use('/api',middleware());
 
 // api router
-app.use('/api', api());
+app.use(api());
 // error handle
 app.use(invalidRoute());
 app.use(error);
