@@ -1,42 +1,18 @@
-# Micro-service-template
+# Responsive Resume
 
-# Lint
-Eslint for linting
+This is the solution to the Stage 2 task for the HNG internship.       
 
-# Test
-We use mocha & chai for testing
+I have next to zero knowledge of HTML and CSS, but I'm quite good with flutter.     
 
-# Make it your own
-```bash
-rm -rf .git     
-git init
-```
+I created the resume with flutter using flutter web.        
 
-# How to use
+I'm serving the resume with this Node.js server hosted on Heroku.       
 
-* Step 1
-Click on use template 
+The link to the repo of the flutter web app for this resume can be found below:         
 
-* Step 2
-Once the template is already created on your profile clone it
+https://github.com/Mitchel-jf/responsive_resume     
 
-* Step 3
-Add this repo as your template repo
 
-```bash
-git remote add template https://github.com/atechcoins-dev/Micro-service-template.git
-```
+In the submission form, I couldn't find space to submit No. 2 assignment, a program that prints your name, so here's the link to the repo below (check the index.js):            
 
-* Step 4 
-Get new update added to this template 
-
-```bash
-git fetch template
-```
-
-* Step 5
-Pull update from the template to your local branch
-
-```bash
-git pull template main --allow-unrelated-histories
-```
+https://github.com/Mitchel-jf/print_my_name

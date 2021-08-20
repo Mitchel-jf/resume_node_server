@@ -4,7 +4,7 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import path from 'path'
-import middleware from './middleware';
+// import middleware from './middleware';
 import api from './api';
 import invalidRoute from './errors/route';
 import error from './errors';
